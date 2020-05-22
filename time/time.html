@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스톱워치</title>
+    <link rel="stylesheet" href="time.css">
+    <script src="time.js"></script>
+</head>
+
+<body>
+    <form name="frm">
+        <table>
+            <tr>
+                <th colspan="3"><input type="text" value="스톱워치" id="NAME" readonly></th>
+            </tr>
+            <tr>
+                <td><input type="button" value="시작" class="button" onclick="start1()"></td>
+                <td><input type="button" value="일시정지" class="button" onclick="stop1()"></td>
+                <td><input type="button" value="초기화" class="button" onclick="clear1()"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="text" name="timer" id="text" placeholder="시작버튼을 누르세요." readonly></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
