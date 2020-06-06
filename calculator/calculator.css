@@ -1,23 +1,99 @@
-h1 {
- font-size: 45px;
- text-align: center;
-}
 span {
- color: greenyellow;
+    color: greenyellow;
 }
 table {
- border-collapse: collapse;
- text-align: center;
+    border-collapse: collapse;
+    text-align: center;
 }
 td {
- padding: 20px 40px;
- text-align: center;
+    padding: 20px 40px;
+    text-align: center;
 }
 input {
- text-align: right;
- border: none;
- font-size: 20px;
+    text-align: right;
+    border: none;
+    font-size: 20px;
 }
 input:focus {
- outline: none;
+    outline: none;
+}
+.wrapper {
+    background-color: rgb(37, 255, 226);
+    padding: 1em;
+    display: flex;
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+    grid-gap: 20px;
+}
+
+.box {
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: black;
+    cursor: pointer;
+    text-align: right;
+}
+
+.title {
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#jb-sidebar-left {
+    width: 5%;
+    padding: 20px;
+    float: left;
+}
+
+#jb-content {
+    width: 73%;
+    padding: 20px;
+    border: 0px;
+    border-left: 1px solid #000000;
+    float: left;
+}
+
+.menu {
+    text-align: center;
+}
+
+#home {
+    width: 14px;
 }
