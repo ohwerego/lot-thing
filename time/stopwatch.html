@@ -10,29 +10,36 @@
 </head>
 
 <body>
-    <div class="dropdown">
-        <button class="dropbtn">시계</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+    <div class="wrapper">
+        <p class="title">시계</p>
+        <div class="dropdown">
+            <button class="box">메뉴</button>
+            <div class="dropdown-content">
+                <a class="manu" href="../calculator/calculator.html">계산기</a>
+                <a class="manu" href="../index.html"><img src="../img/home.svg" alt="" id="home"> 홈 으로</a>
+            </div>
         </div>
     </div>
-    <form name="frm">
-        <table>
-            <tr>
-                <th colspan="3"><input type="text" value="스톱워치" id="NAME" readonly></th>
-            </tr>
-            <tr>
-                <td><input type="button" value="시작" class="button" onclick="start1()"></td>
-                <td><input type="button" value="일시정지" class="button" onclick="stop1()"></td>
-                <td><input type="button" value="초기화" class="button" onclick="clear1()"></td>
-            </tr>
-            <tr>
-                <td colspan="3"><input type="text" name="timer" id="text" placeholder="시작버튼을 누르세요." readonly></td>
-            </tr>
-        </table>
-    </form>
+    <div id="jb-sidebar-left">
+    </div>
+    <div id="jb-content">
+        <form name="frm">
+            <table id="table">
+                <tr>
+                    <th colspan="3"><input type="text" value="스톱워치" id="NAME" readonly></th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="시작" class="button" onclick="start1()"></td>
+                    <td><input type="button" value="일시정지" class="button" onclick="stop1()"></td>
+                    <td><input type="button" value="초기화" class="button" onclick="clear1()"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="text" name="timer" id="text" placeholder="시작버튼을 누르세요." readonly></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
 </body>
 
 </html>
