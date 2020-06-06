@@ -8,10 +8,6 @@
     background-color: greenyellow;
 }
 
-table {
-    margin-left: 109px;
-}
-
 #text {
     width: 1294px;
     height: 160px;
@@ -32,14 +28,34 @@ table {
     border-radius: 10px;
     background-color: greenyellow;
 }
-	
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: 0px;
+.wrapper {
+    background-color: rgb(37, 255, 226);
+    padding: 1em;
+    display: flex;
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+    grid-gap: 20px;
+}
+
+.box {
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: black;
     cursor: pointer;
+    text-align: right;
+}
+
+.title {
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 30px;
 }
 
 .dropdown {
@@ -71,6 +87,24 @@ table {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+#jb-sidebar-left {
+    width: 5%;
+    padding: 20px;
+    float: left;
+}
+
+#jb-content {
+    width: 73%;
+    padding: 20px;
+    border: 0px;
+    border-left: 1px solid #000000;
+    float: left;
+}
+
+.menu {
+    text-align: center;
+}
+
+#home {
+    width: 14px;
 }
